@@ -1,9 +1,0 @@
-.personal-info, form{
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-
-input{
-  width: 80%;
-}
