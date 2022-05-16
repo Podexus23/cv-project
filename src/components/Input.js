@@ -1,20 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Input extends Component{
+function Input(props){
 
-  render(){
-    return (
-      <label htmlFor={this.props.id}>{this.props.name}
+    return <label htmlFor={props.id}>{props.name}
         <input 
-        type={this.props.type} 
-        id={this.props.id} 
-        placeholder={this.props.placeholder}
-        autoComplete={this.props.autoComplete}
-        onChange={e => this.props.handleChange(e.target)}
-        value={this.props.text} />
+        type={props.type} 
+        id={props.id} 
+        placeholder={props.placeholder}
+        autoComplete={props.autoComplete}
+        onChange={e => props.handleChange(e.target)}
+        value={props.text} />
       </label>
-    );
-  };
 }
 
 export default Input;
